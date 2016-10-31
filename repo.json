@@ -4,7 +4,7 @@
   "Tags": ["wc", "word", "character", "count"],
   "Versions": [
     {
-      "Version": "0.1.1",
+      "Version": "1.0.0",
       "Url": "https://github.com/peacea17/micro-wc-plugin/archive/v0.1.1.zip",
       "Require": {
         "micro": ">=1.1.0"
