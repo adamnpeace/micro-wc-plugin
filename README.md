@@ -1,2 +1,2 @@
-# micro-wc-plugin
-Word and Char count plugin for micro go editor
+# micro-wc-plugin #
+Word and character counter for micro go editor.

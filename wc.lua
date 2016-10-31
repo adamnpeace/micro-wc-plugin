@@ -10,4 +10,5 @@ function wordCount ()
 	messenger:Message("Words:"..buflen.."  Characters:"..charCount)
 end
 
+AddRuntimeFile("wc", "help", "help/wc.md")
 
