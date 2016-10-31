@@ -6,9 +6,10 @@ function wordCount ()
 	buffer = CurView().Buf	--Pulls working screen buffer from editor view
 	charCount = buffer:len() --Finds length of buffer
 	bufstr = tostring(buffer)
-	_, buflen = bufstr:gsub("[^%s]+","") --Lua patterns:"[^%s]"" relates to NOT of space chars, "+" removes repeated chars (see: lua.org/pil/20.2.html)
-	messenger:Message("Words:"..buflen.."  Characters:"..charCount)
+	local _ , wordCount = bufstr:gsub("%S+","") --Lua patterns, see: lua.org/pil/20.2.html
+	messenger:Message("Words:"..wordCount.."  Characters:"..charCount)
 end
 
 AddRuntimeFile("wc", "help", "help/wc.md")
+BindKey("F5", "wc.wordCount")
 

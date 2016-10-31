@@ -7,15 +7,14 @@ A word is defined as a string of characters delimited by white
 space characters.  White space characters are the set of characters
 for which the iswspace(3) function returns true. 
 
-To initiate the function, you can either run:
+Character count includes white space.
+
+To initiate the function, you can either:
+
+Press "F5"
+
+Or run:
 
 ```
-> charcount
+> wc
 ```
-To display the number of characters in the file
-
-OR
-```
-> wordcount
-```
-To display the number of words in a file
