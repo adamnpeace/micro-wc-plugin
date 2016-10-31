@@ -5,7 +5,7 @@
   "Versions": [
     {
       "Version": "1.0.0",
-      "Url": "https://github.com/peacea17/micro-wc-plugin/archive/v1.0.0.zip",
+      "Url": "https://github.com/adamnpeace/micro-wc-plugin/archive/v1.0.0.zip",
       "Require": {
         "micro": ">=1.1.0"
       }
