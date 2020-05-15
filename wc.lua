@@ -1,8 +1,9 @@
-VERSION = "1.2.0"
+VERSION = "1.2.1"
 
 local micro = import("micro")
 local config = import("micro/config")
 local util = import("micro/util")
+local utf8 = import("unicode/utf8")
 
 function init()
     config.MakeCommand("wc", wordCount, config.NoComplete)
@@ -23,7 +24,7 @@ function wordCount(bp)
     	buffer = util.String(bp.Buf:Bytes())
     end
     --length of the buffer/selection (string) (non utf-8 friendly right now)
-	charCount = buffer:len()
+	charCount = utf8.RuneCountInString(buffer)
 	--Get word/line count using gsub's number of substitutions
 	-- number of substitutions, pattern: %S+ (more than one non-whitespace characters)
 	local _ , wordCount = buffer:gsub("%S+","")
