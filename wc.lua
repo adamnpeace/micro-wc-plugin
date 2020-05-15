@@ -23,7 +23,7 @@ function wordCount(bp)
 	--no selection, convert whole buffer byte[] to string
     	buffer = util.String(bp.Buf:Bytes())
     end
-    --length of the buffer/selection (string) (non utf-8 friendly right now)
+    --length of the buffer/selection (string), utf8 friendly
 	charCount = utf8.RuneCountInString(buffer)
 	--Get word/line count using gsub's number of substitutions
 	-- number of substitutions, pattern: %S+ (more than one non-whitespace characters)
