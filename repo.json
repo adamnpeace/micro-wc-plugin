@@ -1,6 +1,7 @@
 [{
   "Name": "wc",
   "Description": "Plugin to count words/characters in micro",
+  "Website": "https://github.com/adamnpeace/micro-wc-plugin",
   "Tags": ["wc", "word", "character", "count"],
   "Versions": [
     {
